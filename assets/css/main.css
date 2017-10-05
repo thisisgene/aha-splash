@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'DIN alt';
+  src: url(../fonts/din1451alt.ttf); }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  font-family: "DIN Alternate", sans-serif;
+  font-size: 16px; }
+
+.main-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh; }
+  @media (max-width: 900px) {
+    .main-wrapper {
+      flex-direction: column;
+      height: auto; }
+      .main-wrapper .logo {
+        margin: 0 !important; }
+      .main-wrapper .main-content-wrapper {
+        padding: 0 1rem; }
+        .main-wrapper .main-content-wrapper .main-content {
+          text-align: center; }
+          .main-wrapper .main-content-wrapper .main-content ul {
+            text-align: left; } }
+  .main-wrapper .logo {
+    margin: 2rem; }
+    .main-wrapper .logo img {
+      width: 300px;
+      height: 300px; }
+  .main-wrapper .main-content-wrapper {
+    max-width: 500px; }
+    .main-wrapper .main-content-wrapper .main-content {
+      color: #444;
+      font-size: .95rem; }
+      .main-wrapper .main-content-wrapper .main-content ul li {
+        margin: .2rem 0; }
+      .main-wrapper .main-content-wrapper .main-content a {
+        color: #1ae;
+        text-decoration: none; }
+      .main-wrapper .main-content-wrapper .main-content .bigtext {
+        font-size: 1.4rem;
+        color: #666; }

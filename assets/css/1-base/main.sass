@@ -1,0 +1,59 @@
+@font-face
+  font-family: 'DIN alt'
+  src: url(../fonts/din1451alt.ttf)
+
+html, body
+  margin: 0
+  padding: 0
+  background: #fafafa
+  font:
+    family: "DIN Alternate", sans-serif
+    size: 16px
+
+.main-wrapper
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  width: 100vw
+  height: 100vh
+
+  @media(max-width: 900px)
+    flex-direction: column
+    height: auto
+    .logo
+      margin: 0 !important
+
+    .main-content-wrapper
+      padding: 0 1rem
+
+      .main-content
+        text-align: center
+
+        ul
+          text-align: left
+
+  .logo
+    margin: 2rem
+    img
+      width: 300px
+      height: 300px
+
+  .main-content-wrapper
+    max-width: 500px
+
+    .main-content
+      color: #444
+      font-size: .95rem
+
+      ul li
+        margin: .2rem 0
+
+      a
+        color: #1ae
+        text-decoration: none
+
+      .bigtext
+        font-size: 1.4rem
+        color: #666
+        //text-align: center
